@@ -4,7 +4,7 @@
 new cam1 broadcast
 setup cam1 input "rtsp://192.168.18.220:8557/h264"
 setup cam1 loop
-setup cam1 output #transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none}:rtp{sdp=rtsp://:8554/virtcam}
+setup cam1 output #rtp{sdp=rtsp://:8554/virtcam}
 setup cam1 option file-caching=1000
 
 new cam2 broadcast
