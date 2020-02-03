@@ -111,8 +111,11 @@ setup cam3 option file-caching=1000
 (http://62.117.66.226:5118/mjpg/video.mjpg)
 
 #### Куча
-
 ```sh
+vlc input_stream --sout "#module1{option1=parameter1{parameter-option1},option2=parameter2}:module2{option1=…,option2=…}:…"
+#
+#
+#
 /snap/bin/vlc /media/technocrat/nix_part/projects/research_videolan/MakingThePacific.mkv --sout '#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none}:rtp{sdp=rtsp://:8554/pubcam}'
 /snap/bin/vlc http://95.215.176.83:10090/video49.mjpg --sout '#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none}:rtp{sdp=rtsp://:8554/pubcam}'
 /snap/bin/vlc http://95.215.176.83:10090/video49.mjpg --sout '#transcode{vcodec=h264,vb=3500,width=1920,height=1080,acodec=mp3,ab=192,channels=2,samplerate=44100,scodec=none}:rtp{sdp=rtsp://:8554/pubcam}'

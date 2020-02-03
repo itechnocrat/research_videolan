@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>GUI For VLM</title>
+    <style type="text/css">
+    body {
+            font-family: sans-serif;
+            background-color: #1A1F2B;
+            font-size: 18px;
+        }
+    a,p {
+      color: #F3A056;
+      text-decoration: none;
+    }
+    </style>
 </head>
+
 <body>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam1%20enabled">Активировать поток с камеры 1</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam1%20play">Транслировать поток с камеры 1</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam1%20stop">Остановить поток с камеры 1</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam1%20disabled">Дезактивировать поток с камеры 1</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam2%20enabled">Активировать поток с камеры 2</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam2%20play">Транслировать поток с камеры 2</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam2%20stop">Остановить поток с камеры 2</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam2%20disabled">Дезактивировать поток с камеры 2</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam3%20enabled">Активировать поток с камеры 3</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam3%20play">Транслировать поток с камеры 3</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam3%20stop">Остановить поток с камеры 3</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam3%20disabled">Дезактивировать поток с камеры 3</a><br>
-    <a href="http://192.168.18.21:8085/requests/vlm.xml">Посмотреть чего нибудь</a><br>
+    <p>192.168.18.220</p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam1%20enabled">Активировать поток с камеры 1</a></p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam1%20play">Транслировать поток с камеры 1</a></p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam1%20stop">Остановить поток с камеры 1</a></p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam1%20disabled">Дезактивировать поток с камеры 1</a></p>
+    <br>
+    <p>192.168.18.221</p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam2%20enabled">Активировать поток с камеры 2</a></p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam2%20play">Транслировать поток с камеры 2</a></p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam2%20stop">Остановить поток с камеры 2</a></p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam2%20disabled">Дезактивировать поток с камеры 2</a></p>
+    <br>
+    <p>192.168.18.222</p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam3%20enabled">Активировать поток с камеры 3</a></p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam3%20play">Транслировать поток с камеры 3</a></p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam3%20stop">Остановить поток с камеры 3</a></p>
+    <p><a href="http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam3%20disabled">Дезактивировать поток с камеры 3</a></p>
+    <br>
+    <p><a href="http://localhost:8085/requests/vlm.xml">Посмотреть чего нибудь</a></p>
+    <!-- [Активировать поток с камеры 1](http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam1%20enabled)  
+[Транслировать поток с камеры 1](http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam1%20play)
 
-<!-- [Активировать поток с камеры 1](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam1%20enabled)  
-[Транслировать поток с камеры 1](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam1%20play)
+[Остановить поток с камеры 1](http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam1%20stop)  
+[Дезактивировать поток с камеры 1](http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam1%20disabled)
 
-[Остановить поток с камеры 1](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam1%20stop)  
-[Дезактивировать поток с камеры 1](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam1%20disabled)
+[Активировать поток с камеры 2](http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam2%20enabled)  
+[Транслировать поток с камеры 2](http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam2%20play)
 
-[Активировать поток с камеры 2](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam2%20enabled)  
-[Транслировать поток с камеры 2](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam2%20play)
+[Остановить поток с камеры 2](http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam2%20stop)  
+[Дезактивировать поток с камеры 2](http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam2%20disabled)
 
-[Остановить поток с камеры 2](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam2%20stop)  
-[Дезактивировать поток с камеры 2](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam2%20disabled)
+[Активировать поток с камеры 3](http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam3%20enabled)  
+[Транслировать поток с камеры 3](http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam3%20play)
 
-[Активировать поток с камеры 3](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam3%20enabled)  
-[Транслировать поток с камеры 3](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam3%20play)
+[Остановить поток с камеры 3](http://localhost:8085/requests/vlm_cmd.xml?command=control%20cam3%20stop)  
+[Дезактивировать поток с камеры 3](http://localhost:8085/requests/vlm_cmd.xml?command=setup%20cam3%20disabled)
 
-[Остановить поток с камеры 3](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=control%20cam3%20stop)  
-[Дезактивировать поток с камеры 3](http://192.168.18.21:8085/requests/vlm_cmd.xml?command=setup%20cam3%20disabled)
-
-[Посмотреть чего нибудь](http://192.168.18.21:8085/requests/vlm.xml) -->
+[Посмотреть чего нибудь](http://localhost:8085/requests/vlm.xml) -->
 </body>
+
 </html>
