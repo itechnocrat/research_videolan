@@ -10,13 +10,13 @@ setup cam1 option file-caching=1000
 new cam2 broadcast
 setup cam2 input "rtsp://192.168.18.221:8557/h264"
 setup cam2 loop
-setup cam2 output #transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none}:rtp{sdp=rtsp://:8554/virtcam}
+setup cam2 output #rtp{sdp=rtsp://:8554/virtcam}
 setup cam2 option file-caching=1000
 
 new cam3 broadcast
 setup cam3 input "rtsp://192.168.18.222:8557/h264"
 setup cam3 loop
-setup cam3 output #transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none}:rtp{sdp=rtsp://:8554/virtcam}
+setup cam3 output #rtp{sdp=rtsp://:8554/virtcam}
 setup cam3 option file-caching=1000
 
 # setup cam1 enabled
